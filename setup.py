@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 
 setup(
     name = "fenicio",
-    version = "0.0.2",
+    version = "0.0.3",
     author = "Alejo Prieto Dávalos",
     author_email = "alejoprietodavalos@gmail.com",
     packages = find_packages(),
@@ -14,7 +14,7 @@ setup(
     project_urls = {
         "Source": "https://github.com/AlejoPrietoDavalos/fenicio/"
     },
-    python_requires = ">=3.12",
+    python_requires = ">=3.11",
     install_requires = [
         "requests>=2.32.3",
         "pydantic>=2.8.2",
