@@ -6,11 +6,11 @@ setup(
     version = "0.0.1",
     author = "Alejo Prieto Dávalos",
     author_email = "alejoprietodavalos@gmail.com",
-    packages = find_packages(where="fenicio"),
+    packages = find_packages(),
     description = "Python SDK para la API de Fenicio https://fenicio.io/.",
     long_description = Path("README.md").read_text(),
     long_description_content_type = "text/markdown",
-    #url = ""   # url pypi
+    url = "https://pypi.org/project/fenicio/",
     project_urls = {
         "Source": "https://github.com/AlejoPrietoDavalos/fenicio/"
     },
