@@ -1,7 +1,8 @@
 Metadata-Version: 2.1
 Name: fenicio
-Version: 0.0.1
+Version: 0.0.2
 Summary: Python SDK para la API de Fenicio https://fenicio.io/.
+Home-page: https://pypi.org/project/fenicio/
 Author: Alejo Prieto Dávalos
 Author-email: alejoprietodavalos@gmail.com
 Project-URL: Source, https://github.com/AlejoPrietoDavalos/fenicio/
