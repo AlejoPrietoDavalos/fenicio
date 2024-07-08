@@ -2,3 +2,8 @@
 env/
 __pycache__/
 .pytest_cache
+
+# Se eliminan los archivos de creación del paquete.
+build/
+dist/
+*.egg-info/
