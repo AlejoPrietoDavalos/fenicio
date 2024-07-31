@@ -6,7 +6,7 @@ from pydantic import BaseModel, Field
 from fenicio._etc import BaseModelNoExtra
 
 
-__all__ = ["FenicioOrders", "FenicioOrder"]
+__all__ = ["FenicioOrders", "FenicioOrder", "ParamsOrdersGET"]
 
 BuyerDocument = Literal["DOCUMENTO_IDENTIDAD", "PASAPORTE"]
 Gender = Literal[None, "F", "M"]
