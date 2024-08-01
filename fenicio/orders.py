@@ -1,5 +1,5 @@
 from typing import Literal, List
-from datetime import datetime
+from datetime import datetime, date
 
 from pydantic import BaseModel, Field
 
@@ -40,7 +40,7 @@ DeliveryState = Literal[
 class ParamsOrdersGET(BaseModel):
     pag: int | None = Field(default=1, ge=1)
     tot: int = Field(default=50, ge=1, le=500)
-    #fDesde: date = None
+    fDesde: date = None
     estado: OrderState = None
 
     def to_json(self) -> dict:
