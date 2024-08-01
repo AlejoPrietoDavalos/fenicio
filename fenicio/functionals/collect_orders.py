@@ -21,10 +21,11 @@ def download_all_orders_responses(fenicio: Fenicio, params: ParamsOrdersGET) -> 
 def download_all_orders(fenicio: Fenicio, params: ParamsOrdersGET) -> FenicioOrders:
     # FIXME: Hardcodeado, y no se controla un error=True, o si la requests falla.
     responses = download_all_orders_responses(fenicio=fenicio, params=params)
+    totAbs = 0 if len(responses)==0 else responses[-1]["totAbs"]
     orders = FenicioOrders(
         error = False,
         msj = "",
-        totAbs = responses[-1]["totAbs"],
+        totAbs = totAbs,
         ordenes = []
     )
     for r in responses:
