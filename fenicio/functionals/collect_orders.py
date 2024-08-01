@@ -1,5 +1,6 @@
 from typing import List
-from fenicio import Fenicio, ParamsOrdersGET, FenicioOrders
+from fenicio.client import Fenicio
+from fenicio.orders import ParamsOrdersGET, FenicioOrders
 
 def download_all_orders_responses(fenicio: Fenicio, params: ParamsOrdersGET) -> List[dict]:
     responses = []
