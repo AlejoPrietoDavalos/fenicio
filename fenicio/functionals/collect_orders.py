@@ -1,6 +1,8 @@
 from typing import List
+
 from fenicio.client import Fenicio
 from fenicio.orders import ParamsOrdersGET, FenicioOrders
+
 
 def download_all_orders_responses(fenicio: Fenicio, params: ParamsOrdersGET) -> List[dict]:
     responses = []
@@ -14,7 +16,8 @@ def download_all_orders_responses(fenicio: Fenicio, params: ParamsOrdersGET) -> 
         else:
             responses.append(r)
             total_orders = sum(len(r["ordenes"]) for r in responses)
-            print(f"total_orders: {total_orders} | page: {i} | totAbs: {responses[-1]['totAbs']}")
+            # FIXME: Creo que entra en este loop mas veces de las q debería.
+            #print(f"total_orders: {total_orders} | page: {i} | totAbs: {responses[-1]['totAbs']}")
             i += 1
     return responses
 
