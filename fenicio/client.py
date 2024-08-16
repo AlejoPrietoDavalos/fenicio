@@ -1,7 +1,10 @@
+from typing import TypeVar
 from requests import Response
 
 from fenicio.orders import ParamsOrdersGET
 from fenicio.request import get_orders, get_order
+
+T_Fenicio = TypeVar("T_Fenicio", bound="Fenicio")
 
 class Fenicio:
     """
